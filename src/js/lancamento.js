@@ -10,16 +10,20 @@ async function getMovies() {
     const movies = data.results;
 
     for (const movie of movies) {
+    const trailerUrl = `https://www.themoviedb.org/movie/${movie.id}-${movie.title}`;
+
       filmeContainer.innerHTML += `
       <div class="filme">
-            <img src="${img_url}${movie.backdrop_path}" alt="poster">
+      <a href="${trailerUrl}" target="_blank"><img src="${img_url}${movie.backdrop_path}" alt="poster"></a>
                 <p class="titulo-filme">${movie.title}</p>
         </div>
       `
+
     }
   } catch (error) {
     console.error(error);
   }
 }
+
 
 getMovies();
