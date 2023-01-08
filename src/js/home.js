@@ -45,21 +45,24 @@ const makeCategoryElements = (categoria, data) => {
 
 const makeCards = (id, data) => {
     const filmeContainer = document.getElementById(id);
-
+    
+    
     data.forEach((item, i)=> {
+        const trailerUrl = `https://www.themoviedb.org/movie/${data[i].id}-${data[i].title}`;
+        
         if(item.backdrop_path == null){
             item.backdrop_path = item.poster_path;
             if(item.backdrop_path == null){
                 return;
             }
         }
-
+        console.log(data);
         filmeContainer.innerHTML += `
-        <div class="filme">
-            <img src="${img_url}${item.backdrop_path}" alt="poster">
+      <div class="filme">
+      <a href="${trailerUrl}" target="_blank"><img src="${img_url}${item.backdrop_path}" alt="poster"></a>
                 <p class="titulo-filme">${item.title}</p>
         </div>
-        `
+      `
         
         if(i == data.length - 1){
             setTimeout(()=>{
