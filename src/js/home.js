@@ -56,7 +56,6 @@ const makeCards = (id, data) => {
                 return;
             }
         }
-        console.log(data);
         filmeContainer.innerHTML += `
       <div class="filme">
       <a href="${trailerUrl}" target="_blank"><img src="${img_url}${item.backdrop_path}" alt="poster"></a>
@@ -71,13 +70,3 @@ const makeCards = (id, data) => {
         }
     })
 }
-
-const init = ()=> {
-    let xhr = new XMLHttpRequest ();
-    let url = "https://api.themoviedb.org/3/movie/top_rated?api_key=a7c8f3e436b89729fc0f9d797ee42c55&language=pt-BR"
-    xhr.onload = makeCards;
-    xhr.open ('GET', url, true);
-    xhr.send ();
-}
-
-document.body.onload = init
