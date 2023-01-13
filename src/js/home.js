@@ -48,7 +48,7 @@ const makeCards = (id, data) => {
     
     
     data.forEach((item, i)=> {
-        const trailerUrl = `https://www.themoviedb.org/movie/${data[i].id}-${data[i].title}`;
+        const infoUrl = `https://www.themoviedb.org/movie/${data[i].id}-${data[i].title}`;
         
         if(item.backdrop_path == null){
             item.backdrop_path = item.poster_path;
@@ -57,11 +57,11 @@ const makeCards = (id, data) => {
             }
         }
         filmeContainer.innerHTML += `
-      <div class="filme">
-      <a href="${trailerUrl}" target="_blank"><img src="${img_url}${item.backdrop_path}" alt="poster"></a>
-                <p class="titulo-filme">${item.title}</p>
-        </div>
-      `
+            <div class="filme">
+                <a href="${infoUrl}" target="_blank"><img src="${img_url}${item.backdrop_path}" alt="poster"></a>
+                    <p class="titulo-filme">${item.title}</p>
+            </div>
+        `
         
         if(i == data.length - 1){
             setTimeout(()=>{
