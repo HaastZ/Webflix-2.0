@@ -69,8 +69,8 @@ body {
 
 .filme-container img {
     margin: 10px;
-    max-width: 501px;
-    max-height: 282px;
+    width: 502px;
+    height: 282px;
 }
 
 .filme-container img:hover {
