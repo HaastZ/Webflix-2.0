@@ -11,4 +11,4 @@ Meu projeto de site de filmes melhorado, um clone da netflix
 * JAVASCRIPT
 
 #
-* Visualização do projeto: 
+* Visualização do projeto: https://webflix-2-0-gtx9bhj5e-haastz.vercel.app/
