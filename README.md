@@ -1,3 +1,5 @@
+![Webflix-logo-removebg-preview](https://user-images.githubusercontent.com/102103337/213958688-ad680033-3601-4c45-969d-496b61315328.png)
+
 
 Meu projeto de site de filmes melhorado, um clone da netflix
 
