@@ -12,5 +12,11 @@ Meu projeto de site de filmes melhorado, um clone da netflix
 * CSS
 * JAVASCRIPT
 
+# Funcionalidades
+* Página de destaques com os filmes vindo da API do The Movie DB
+* Página de lançamentos com os Filmes vindo também da API
+* Sistema de pesquisa de filmes
+* Filmes listados em categorias na Página Principal
+
 #
 * Visualização do projeto: https://webflix-2-0-gtx9bhj5e-haastz.vercel.app/
